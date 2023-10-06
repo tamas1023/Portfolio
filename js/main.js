@@ -32,7 +32,7 @@
         {
           scrollTop: $(this.hash).offset().top - 45,
         },
-        650,
+        550,
         "easeInOutExpo"
       );
 
@@ -52,7 +52,7 @@
     }
   });
   $(".back-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 650, "easeInOutExpo");
+    $("html, body").animate({ scrollTop: 0 }, 550, "easeInOutExpo");
     return false;
   });
 
