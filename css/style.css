@@ -296,8 +296,9 @@ h6,
   background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
     url(../img/bg-bottom.png),
     linear-gradient(to bottom right, var(--primary), var(--secondary));
-  background-position: left 0px top 0px, right 0px top 50%, center bottom;
+  background-position: left 0px top 0px, right 0px top 10%, center bottom;
   background-repeat: no-repeat;
+  background-size: auto, auto, cover, cover;
 }
 
 @media (max-width: 991.98px) {
@@ -468,14 +469,24 @@ h6,
 
 /*** Footer ***/
 .footer {
-  margin-top: 6rem;
   padding-top: 9rem;
   background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
     url(../img/bg-top.png),
     linear-gradient(to bottom right, var(--primary), var(--secondary));
   background-position: left 0px bottom 0px, right 0px top 50%, center top;
   background-repeat: no-repeat;
+  background-size: auto, auto, cover, cover;
 }
+/*
+  margin-bottom: 6rem;
+  padding: 16rem 0 0 0;
+  background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
+    url(../img/bg-bottom.png),
+    linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background-position: left 0px top 0px, right 0px top 10%, center bottom;
+  background-repeat: no-repeat;
+  background-size: auto, auto, cover, cover;
+*/
 
 .footer .btn.btn-social {
   margin-right: 5px;
