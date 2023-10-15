@@ -42,6 +42,10 @@ h6,
 .fw-medium {
   font-weight: 500 !important;
 }
+/*** About ***/
+.fixhossz {
+  height: 370px !important;
+}
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
@@ -78,6 +82,12 @@ h6,
     var(--secondary),
     var(--primary)
   );
+}
+.bg-light-gradient {
+  background: linear-gradient(to bottom right, var(--hatvan), var(--tiz));
+}
+.bg-light2-gradient {
+  background: linear-gradient(to top right, var(--tiz), var(--hatvan));
 }
 
 /*** Button ***/

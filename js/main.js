@@ -24,7 +24,7 @@
   });
 
   // Smooth scrolling on the navbar links
-  $(".navbar-nav a").on("click", function (event) {
+  $("a").on("click", function (event) {
     if (this.hash !== "") {
       event.preventDefault();
 
@@ -32,7 +32,7 @@
         {
           scrollTop: $(this.hash).offset().top - 45,
         },
-        550,
+        350,
         "easeInOutExpo"
       );
 
@@ -52,7 +52,7 @@
     }
   });
   $(".back-to-top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 550, "easeInOutExpo");
+    $("html, body").animate({ scrollTop: 0 }, 350, "easeInOutExpo");
     return false;
   });
 
