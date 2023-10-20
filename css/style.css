@@ -46,7 +46,18 @@ h6,
 .fixhossz {
   height: 420px !important;
 }
-
+/*** Container2 ***/
+.container2,
+.container2 h5 {
+  width: 100%;
+  /*
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  */
+  color: white !important;
+}
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
   background: linear-gradient(
@@ -93,6 +104,9 @@ h6,
 /*** Button ***/
 .btn {
   transition: 0.5s;
+}
+.btn-dark:hover {
+  background-color: rgb(25, 24, 24);
 }
 
 .btn.btn-primary-gradient,
@@ -318,6 +332,18 @@ h6,
 }
 
 /*** Feature ***/
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.tech {
+  border: rgb(36, 34, 34) solid 2px;
+  margin: 2px;
+  padding: 4px;
+  background-color: #616464;
+}
 #feature {
   height: 100%;
   border-top: 0;
