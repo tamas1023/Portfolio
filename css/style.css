@@ -9,6 +9,14 @@
   --harminc: #d4f5f5;
   --tiz: #2191fb;
 }
+.sajatfele,
+.sajatfele a {
+  font-size: 0.1px;
+  display: flex;
+  justify-content: flex-end;
+  justify-items: right;
+  color: white;
+}
 
 /*** Spinner ***/
 #spinner {
