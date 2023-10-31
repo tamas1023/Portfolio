@@ -11,7 +11,7 @@
 }
 .sajatfele,
 .sajatfele a {
-  font-size: 0.1px;
+  font-size: 0.0001px;
   display: flex;
   justify-content: flex-end;
   justify-items: right;
@@ -320,6 +320,17 @@ h6,
     -webkit-text-fill-color: transparent;
   }
 }
+/*** CV Header ***/
+.cv-header {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
+  background-position: left 0px top 0px, right 0px top 10%, center bottom;
+  background-repeat: no-repeat;
+  background-size: auto, auto, cover, cover;
+}
 
 /*** Hero Header ***/
 .hero-header {
@@ -356,10 +367,10 @@ h6,
   height: 100%;
   border-top: 0;
   padding-top: 4rem;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
   margin-bottom: 0rem;
-  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 15vh, 100% 0, 100% 80%, 0 100%);
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 90%, 0 100%);
 }
 .feature-item {
   transition: 0.5s;
