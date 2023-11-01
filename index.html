@@ -198,7 +198,10 @@
             </center>
           </div>
           <div class="row g-4 me-0">
-            <div class="col-lg-5 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="col-lg-5 col-md-12 wow fadeInLeft"
+              data-wow-delay="0.1s"
+            >
               <div class="rounded p-4">
                 <!--  
                 <div
@@ -250,18 +253,21 @@
                 <a
                   href="https://carrent-frontend.onrender.com"
                   target="_blank"
-                  class="btn btn-dark py-sm-3 px-3 px-sm-3 rounded-pill animated slideInRight"
+                  class="btn btn-outline-dark py-sm-3 px-3 px-sm-3 animated slideInRight text-white"
                   >Live site</a
                 >
                 <a
                   href="https://github.com/tamas1023/CarRent"
                   target="_blank"
-                  class="btn btn-dark py-sm-3 px-3 px-sm-3 rounded-pill animated slideInRight"
+                  class="btn btn-outline-dark py-sm-3 px-3 px-sm-3 animated slideInRight text-white"
                   >Source code</a
                 >
               </div>
             </div>
-            <div class="col-lg-7 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="col-lg-7 col-md-12 wow fadeInRight"
+              data-wow-delay="0.1s"
+            >
               <div class="rounded p-4">
                 <!--  
                 <div
@@ -287,7 +293,10 @@
                 </video>
               </div>
             </div>
-            <div class="col-lg-5 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="col-lg-5 col-md-12 wow fadeInLeft"
+              data-wow-delay="0.1s"
+            >
               <div class="rounded p-4">
                 <!--  
                 <div
@@ -322,18 +331,21 @@
                 <a
                   href="https://tamas1023.github.io/autoKolcsonzes"
                   target="_blank"
-                  class="btn btn-dark py-sm-3 px-3 px-sm-3 rounded-pill animated slideInRight"
+                  class="btn btn-outline-dark py-sm-3 px-3 px-sm-3 animated slideInRight text-white"
                   >Live site</a
                 >
                 <a
                   href="https://github.com/tamas1023/autoKolcsonzes"
                   target="_blank"
-                  class="btn btn-dark py-sm-3 px-3 px-sm-3 rounded-pill animated slideInRight"
+                  class="btn btn-outline-dark py-sm-3 px-3 px-sm-3 animated slideInRight text-white"
                   >Source code</a
                 >
               </div>
             </div>
-            <div class="col-lg-7 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="col-lg-7 col-md-12 wow fadeInRight"
+              data-wow-delay="0.1s"
+            >
               <div class="rounded p-4">
                 <!--  
                 <div
@@ -349,7 +361,10 @@
                 </video>
               </div>
             </div>
-            <div class="col-lg-5 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="col-lg-5 col-md-12 wow fadeInLeft"
+              data-wow-delay="0.1s"
+            >
               <div class="rounded p-4">
                 <!-- 
                 <div
@@ -382,12 +397,15 @@
                 <a
                   href="https://github.com/tamas1023/Feed-Net"
                   target="_blank"
-                  class="btn btn-dark py-sm-3 px-3 px-sm-3 rounded-pill animated slideInRight"
+                  class="btn btn-outline-dark py-sm-3 px-3 px-sm-3 animated slideInRight text-white"
                   >Source code</a
                 >
               </div>
             </div>
-            <div class="col-lg-7 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="col-lg-7 col-md-12 wow fadeInRight"
+              data-wow-delay="0.1s"
+            >
               <div class="rounded p-4">
                 <!--  
                 <div
@@ -751,12 +769,6 @@
         <div class="container py-5 px-lg-5">
           <center><h1 class="wow fadeInUp">About me</h1></center>
           <div class="wow fadeInUp">
-            <a
-              href="oneletrajz.html"
-              class="btn btn-dark py-sm-3 px-3 px-sm-3 rounded-pill slideInRight"
-            >
-              Resume, ez legyen fent a menübe is egy gomb erre?
-            </a>
             <p>
               I pursued my education at Türr István School in Hungary, Baja,
               where I recently successfully completed a two-year Technical
@@ -780,6 +792,12 @@
               My goal is to work for a company where I can deliver my business
               value while also leveling up my skills as a developer.
             </p>
+            <a
+              href="oneletrajz.html"
+              class="btn btn-outline-dark py-sm-3 px-3 px-sm-3 slideInRight"
+            >
+              Resume
+            </a>
           </div>
           <!--
           <p>
@@ -849,13 +867,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-9">
               <div class="wow fadeInUp" data-wow-delay="0.1s">
-                <p class="text-center mb-4">
-                  The contact form is currently inactive. Get a functional and
-                  working contact form with Ajax & PHP in a few minutes. Just
-                  copy and paste the files, add a little code and you're done.
-                  <a href="https://htmlcodex.com/contact-form">Download Now</a>.
-                </p>
-                <form>
+                <form action="http://localhost:3000/send-email" method="post">
                   <div class="row g-3">
                     <div class="col-md-6">
                       <div class="form-floating">
@@ -863,6 +875,7 @@
                           type="text"
                           class="form-control"
                           id="name"
+                          name="name"
                           placeholder="Your Name"
                         />
                         <label for="name">Your Name</label>
@@ -874,6 +887,7 @@
                           type="email"
                           class="form-control"
                           id="email"
+                          name="email"
                           placeholder="Your Email"
                         />
                         <label for="email">Your Email</label>
@@ -885,6 +899,7 @@
                           type="text"
                           class="form-control"
                           id="subject"
+                          name="subject"
                           placeholder="Subject"
                         />
                         <label for="subject">Subject</label>
@@ -896,6 +911,7 @@
                           class="form-control"
                           placeholder="Leave a message here"
                           id="message"
+                          name="message"
                           style="height: 150px"
                         ></textarea>
                         <label for="message">Message</label>
