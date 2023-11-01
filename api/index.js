@@ -21,7 +21,9 @@ app.post("/send-email", (req, res) => {
   const message = req.body.message;
 
   if (!name || !email || !message) {
-    return res.status(400).redirect("http://127.0.0.1:5500/error.html");
+    return res
+      .status(400)
+      .redirect("https://portfolio-s41t.onrender.com/error.html");
   }
   // Email beállítások
   const transporter = nodemailer.createTransport({
@@ -44,9 +46,13 @@ app.post("/send-email", (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      res.status(500).redirect("http://127.0.0.1:5500/error.html");
+      res
+        .status(500)
+        .redirect("https://portfolio-s41t.onrender.com/error.html");
     } else {
-      res.status(200).redirect("http://127.0.0.1:5500/thank_you.html");
+      res
+        .status(200)
+        .redirect("https://portfolio-s41t.onrender.com/thank_you.html");
     }
   });
 });
