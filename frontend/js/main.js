@@ -1,3 +1,8 @@
+$.get("https://portfolio-backend-sfak.onrender.com/", function (data) {
+  // Code to execute when the request is successful
+}).fail(function () {
+  // Code to execute when the request fails
+});
 (function ($) {
   "use strict";
 
